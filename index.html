@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+ <html lang="en">    
+ <head>
+ <meta charset="UTF-8">    
+ </meta>
+  <script src="https://kit.fontawesome.com/a076d05399.js">
+  </script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+ <link rel="stylesheet" href="style.css"> <script src="http://code.jquery.com/jquery-3.3.1.js">
+ </script>
+     <script src="video.js"></script></script>
+ </script> <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/app.css">
+ <style type="text/css"> 
+ \* { margin: 0; padding: 0; } 
+ body { 
+ font-family: Calibri, sans-serif; } 
+ .video-section { position: relative; min-height: 90vh !important; max-height: 90vh !important; height: 90vh !important; display: block; overflow: hidden; } 
+ #video-elem { 
+ position: absolute; } video::-webkit-media-controls { display:none !important; } 
+ .video-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(31,35,47,.5); background-color: rgba(31, 35, 47, 0.5); opacity: 1; 
+ } 
+ video-overlay-inside h1 { position: absolute; left: 50%; top: 37%; transform: translateX(-50%) translateY(-50%); text-align: center; text-shadow: 0 2px 10px rgba(15,54,89,.3) !important; font-family: HelveticaNeueLTStd-Bd,sans-serif !important; font-size: 36px !important; line-height: 1.3 !important; color: #fff; } 
+ .video-overlay-inside{ height: auto; display: inline-block; position: absolute; top: 50%; transform: translate(50%,-50%); right: 50%; width: 1130px; padding: 180px 215px 180px 215px; text-align: center; } .content-section { color: #fff; }
+  </style> 
+  </head>
+    <body>
+ <div class="wrapper-parallax">
+  <header>
+   <h1>WELDABMETAL</h1>  <img id="img1" src=" http://cdn.simplesite.com/i/1b/b4/286541533684216859/i286541539346271735._szw1280h1280_.jpg">  </header> <
+ <div class="nav-position"> <nav> <span id="brand"> 
+<a href="index.html">
+WELDabmetal</a> </span> <ul id="menu"> <li><a href="#">Home</a></li> <li><a href="#">About</a></li> <li><a href=" http://weldabmetal.simplesite.com/443263696 ">Contact</a></li> <li><a href="#">FAQ</a></li> </ul> <div id="toggle"> <div class="span" id="one"></div> <div class="span" id="two"></div> 
+<div class="span" id="three"></div> </div> </nav> <div id="resize"> <ul id="menu"> <li><a href="#">Home</a></li> <li><a href="#">About</a></li> <li><a href="#">Contact</a></li> <li><a href="#">FAQ</a></li> </ul> </div> </div>
+<br /><br />
+<br /><br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br />
+
+<script> $("#toggle").click(function() { $(this).toggleClass('on'); $("#resize").toggleClass("active"); }); </script> 
+
+    <div id="instructions"> <video id="my-video" class="video-js /vjs-default-skin" width="340px" height="167px" controls preload="none" poster=' http://vjs.zencdn.net/v/oceans.png ' data-setup='{ "aspectRatio":"340:167", "playbackRates": [1, 1.5, 2] }'> <source src=" http://vjs.zencdn.net/v/oceans.mp4 " type='video/mp4'/> <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' /> <track kind="captions" src="../docs/examples/shared/example-captions.vtt" src lang="en" label="English"> </video>
+         <style> #instructions { max-width: 340px; text-align: left; margin: 30px auto; } #instructions textarea { width: 100%; height: 100px; } /* Show the controls (hidden at the start by default) */ .video-js .vjs-control-bar { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; } /* Make the demo a little prettier */ 
+body { 
+margin-top: 20px; background: #822; 
+text-align: center; color: #aaa; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: radial-gradient(#333, hsl(200,30%,6%) ); } a, a:hover, a:visited { color: #76DAFF; } </style>
+        <div id='media-controls'>
+            <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+            <button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>    
+            <button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
+            <button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
+            <button id='volume-inc-button' class='volume-plus' title='increase volume' onclick='changeVolume("+");'>Increase volume</button>
+            <button id='volume-dec-button' class='volume-minus' title='decrease volume' onclick='changeVolume("-");'>Decrease volume</button>
+            <button id='mute-buttoWELDABMETALn' class='mute' title='mute' onclick='toggleMute("true");'>Mute</button>    
+        </div>
+ </div>
+              <div id='media-play-list'>
+            
+            <h2>Play list</h2>
+<hr>
+<br />
+
+            <ul>
+                <li><span class='play-item' onclick='loadVideo(" https://archive.org/download/HomeiraMusicVideos/Homayra-Donya.Donya-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+<br />
+                <li><span class='play-item' onclick='loadVideo(" https://archive.org/download/HomeiraMusicVideos/Homayra-Shenidam-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br />               <li><span class='play-item' onclick='loadVideo(" https://ia801202.us.archive.org/3/items/Baran-Music.Videos/Baran-Dori-Live-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br />
+  <li><span class='play-item' onclick='loadVideo(" https://ia601202.us.archive.org/3/items/Baran-Music.Videos/Baran-Lanat-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br /><li><span class='play-item' onclick='loadVideo(" https://archive.org/download/Ahllam-Music.Videos/Ahllam-Dele.Divooneh-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br />
+  <li><span class='play-item' onclick='loadVideo(" https://archive.org/download/Ahllam-Music.Videos/Ahllam-Ya.Hichki.Ya.To-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button>
+             </span></li>
+             <br /> <li><span class='play-item' onclick=' loadVideo (" https://archive.org/download/MoeinVideos/Moein-Bi.To.Nemitoonam-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+   <br />          
+             <li><span class='play-item' onclick=' loadVideo (" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span>VIDEO N.01</button> </span></li>
+ 
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+             <br />
+                <li><span class='play-item' onclick=' loadVideo (" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+                <br />  <li><span class='play-item' onclick=' loadVideo (" http://vjs.zencdn.net/v/oceans.mp4 ");'><br /> </span> <button id="b1" type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </li>
+</ul>
+</div>
+        </div>
+    </div> 
+    
+    
+     <hr>
+         
+ <footer class="footer"> <div class="container"> <div class="row"> <div class="col-md-6 col-lg-4"> <div class="widget1"> <div class="logo"> <img id="img1" src=" http://cdn.simplesite.com/i/1b/b4/286541533684216859/i286541539345934974._szw1280h1280_.jpg " class="img-fluid" alt=""> 
+ <h5>MY WEB</h5>
+ <iframe loadUrl src=" http://weldabmetal.simplesite.com/443263696 "></iframe></div>
+  <p> In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien. </p> <div class="socialLinks"> <ul> <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li> <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li> <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li> <li> <a href="#"> <i class="fab fa-google-plus-g"></i> </a> </li> </ul> </div> </div> </div> <div class="col-md-6 col-lg-4"> 
+   <div class="widget2"> <h5> Latest News </h5>       
+   <div class="media"> <img class="img-fluid" src=" http://cdn.simplesite.com/i/1b/b4/286541533684216859/i286541539346271984._szw1280h1280_.jpg " alt=""> <div class="media-body d-flex align-self-center"> <div class="content"> <a href="#"> </div> </div> </div> <div class="media"> <img class="img-fluid" src="https://i.ibb.co/m5yGbdR/blog2.jpg" alt=""> <div class="media-body d-flex align-self-center"> <div class="content"> <a href="#"> </div> </div> </div> </div> </div> <div class="col-sm-6 col-lg-2"> <div class="widget3"> <h5> Quick Links </h5> <ul> <li> <a href="#"> Home </a> </li> <li> <a href="#"> about </a> </li> <li> <a href="#"> contact </a> </li> <li> <a href="#"> privecy </a> </li> <li> <a href="#"> skills </a> </li> <li> <a href="#"> career </a> </li> </ul> </div> </div> <div class="col-sm-6 col-lg-2"> <div class="widget4"> <h5> Other Links </h5> <ul> <li> <a href="#"> SOLOLEARN </a> </li> <li> <a href="#"> GITUB </a> </li> <li> <a href="#"> ARCHIV </a> </li> <li> <a href="#"> videohive </a> </li> <li> <a href="#"> redpen </a> </li> <li> <a href="#"> codepen </a> </li> </ul> </div> </div> </div> </div>
+  <span>&nbsp;<a href=" https://www.google.com/maps/place/WELD+abmetal,+Shahrak+Gharb,+Mashhad,+Razavi+Khorasan+Province,+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%E2%80%AD/@36.3608973,59.5267675,20z/data=!4m2!3m1!1s0x3f6c8d2966412b13:0x67f954540245bc81?force=pwa&source=mlpwa " target="_blank" style="text-decoration:none;">   <i class="fa fa-map-marker" style="font-size:32px;color:#69FFA9"></i><n><br />WELDabmetal.IR</n></a></span><br><br> <span>&nbsp;<a href="https://instagram.com/weldabmetal.ir" target="_blank" style="text-decoration:none;"><i class="fab fa-instagram" style="font-size:32px;color:#69FFA9"></i><n><br />WELDabmetal.IR</n></a></span><br><br><span>&nbsp;<a href="tel:+989365813043" target="_blank" style="text-decoration:none;"><i class="fa fa-phone" style="font-size:32px;color:#69FFA9"></i><n><br />+989365813043</n></a></span>                    <br><br>
+      
+  <span>&nbsp;<a href="mailto://weldabmetal.ir@gmail.com" target="_blank" style="text-decoration:none;"><i class="fas fa-envelope" style="font-size:32px;color:#69FFA9"></i>
+      
+  <n><br />weldabmetal.ir@gmail.com</n></a></span>
+    <div class="copyRightArea"> <div class="container"> <div class="row"> <div class="col-12 text-center"> <p>&copy; Copyright All rights reserved 2020.</p>
+     </div> </div> </div> </div> 
+  
+   </footer>   
+</body></html>
